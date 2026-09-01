@@ -1,0 +1,49 @@
+{
+  "name": "https://github.com/sysnocs/wapanel-mcp",
+  "version": "0.1.1",
+  "mcpName": "io.github.ArnasDon/https://github.com/sysnocs/wapanel-mcp",
+  "description": "Model Context Protocol (MCP) server for https://github.com/sysnocs/wapanel — drive your self-hosted WhatsApp CRM from Claude, Cursor, and other MCP clients.",
+  "license": "MIT",
+  "author": "sysnocs",
+  "homepage": "https://github.com/sysnocs/https://github.com/sysnocs/wapanel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sysnocs/https://github.com/sysnocs/wapanel.git",
+    "directory": "mcp-server"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "https://github.com/sysnocs/wapanel",
+    "whatsapp",
+    "crm",
+    "claude",
+    "ai"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "https://github.com/sysnocs/wapanel-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.7.0"
+  }
+}
